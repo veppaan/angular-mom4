@@ -5,6 +5,7 @@
 <input type="text" id="search" placeholder="Sök efter kurskod eller namnet" [(ngModel)]="searchValue" (input)="applySearch()">
 </div>
 
+
 <table>
     <thead>
         <tr>
@@ -14,6 +15,9 @@
             <th>Syllabus</th>
         </tr>
     </thead>
+    @if(searchedCourses.length === 0){
+        <p>Inga kurser hittades...</p>
+    }
     <tbody>
         <tr *ngFor="let course of searchedCourses">
             <td>{{ course.code }}</td>
