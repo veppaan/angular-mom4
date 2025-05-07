@@ -15,10 +15,10 @@
             <th>Syllabus</th>
         </tr>
     </thead>
-    @if(searchedCourses.length === 0){
-        <p>Inga kurser hittades...</p>
-    }
     <tbody>
+        @if(searchedCourses.length === 0){
+            <p>Inga kurser hittades...</p>
+        }
         <tr *ngFor="let course of searchedCourses">
             <td>{{ course.code }}</td>
             <td>{{ course.coursename }}</td>
