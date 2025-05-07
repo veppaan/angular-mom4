@@ -1,0 +1,49 @@
+table{
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid #ccc;
+}
+th{
+    text-decoration: underline;
+    padding-bottom: 1.5em;
+    text-align: left;
+    padding: 1em 0.5em;
+}
+td:nth-child(3){
+    text-align: center;
+}
+td{
+    padding: 1em 0.5em;
+    color: #4d4d4d;
+}
+a{
+    color: #455187;
+}
+.all{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+input[type=text]{
+    width: 200px;
+    height: 2em;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+label{
+    font-size: 0.9em;
+    font-weight: 600;
+    padding-right: 0.5em;
+}
+h2{
+    width: fit-content;
+    margin: 0 auto;
+}
+.search{
+    padding: 1.5em 1em;
+    width: 300px;
+    margin: 0 auto;
+}
