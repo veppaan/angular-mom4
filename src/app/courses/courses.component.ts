@@ -33,4 +33,10 @@ export class CoursesComponent {
   sortByCode(){
     this.searchedCourses.sort((a, b) => a.code.localeCompare(b.code)); 
   }
+  sortByName(){
+    this.searchedCourses.sort((a, b) => a.coursename.localeCompare(b.coursename)); 
+  }
+  sortByProgression(){
+    this.searchedCourses.sort((a, b) => a.progression.localeCompare(b.progression)); 
+  }
 }
