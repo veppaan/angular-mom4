@@ -1,1 +1,6 @@
 <h2>Kurser</h2>
+<ul>
+    <li *ngFor="let course of courseList">
+        {{course.code}} : {{course.coursename}}
+    </li>
+</ul>
