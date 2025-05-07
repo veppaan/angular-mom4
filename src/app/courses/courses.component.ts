@@ -25,8 +25,8 @@ export class CoursesComponent {
   }
 
   applySearch(): void{
-    this.searchedCourses = this.courseList.filter((course) => {
+    this.searchedCourses = this.courseList.filter((course) => 
       course.coursename.toLowerCase().includes(this.searchValue.toLowerCase())
-    })
+    );
   }
 }
