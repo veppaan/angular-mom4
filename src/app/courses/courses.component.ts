@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 export class CoursesComponent {
   courseList: Course[] = [];
   searchedCourses : Course[] = [];
+  searchValue: string = "";
 
   constructor(private courseservice : CourseService) {}
 
@@ -20,6 +21,12 @@ export class CoursesComponent {
     this.courseservice.getCourses().subscribe(data => {
       this.courseList = data;
       this.searchedCourses = data;
+    })
+  }
+
+  applySearch(): void{
+    this.searchedCourses = this.courseList.filter((course) => {
+      course.coursename.toLowerCase().includes(this.searchValue.toLowerCase())
     })
   }
 }
