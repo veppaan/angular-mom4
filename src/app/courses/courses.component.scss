@@ -10,6 +10,9 @@ th{
     text-align: left;
     padding: 1em 0.5em;
 }
+th:hover{
+    cursor: pointer;
+}
 td:nth-child(3){
     text-align: center;
 }

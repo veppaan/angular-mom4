@@ -29,4 +29,8 @@ export class CoursesComponent {
       course.coursename.toLowerCase().includes(this.searchValue.toLowerCase())
     );
   }
+
+  sortByCode(){
+    this.searchedCourses.sort((a, b) => a.code.localeCompare(b.code)); 
+  }
 }
